@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { Recipe } from '@/types/recipe';
-import { Clock, Users } from 'lucide-react';
+import { Clock } from 'lucide-react';
 
 interface RecipeCardProps {
   recipe: Recipe;
@@ -36,10 +36,6 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
             <Clock className="h-4 w-4 mr-1" />
             <span>{recipe.prepTime + recipe.cookTime} min</span>
           </div>
-          <div className="flex items-center">
-            <Users className="h-4 w-4 mr-1" />
-            <span>{recipe.servings} servings</span>
-          </div>
         </div>
       </div>
     </Link>
@@ -47,3 +43,4 @@ const RecipeCard = ({ recipe }: RecipeCardProps) => {
 };
 
 export default RecipeCard;
+
