@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import RecipeList from '@/components/RecipeList';
 import { sampleRecipes } from '@/data/recipes';
 import { Button } from '@/components/ui/button';
-import { ChefHat, Coffee, Cookie, UtensilsCrossed } from 'lucide-react';
+import { UtensilsCrossed } from 'lucide-react';
 
 const Index = () => {
   const [filter, setFilter] = useState<string | null>(null);
@@ -20,10 +20,10 @@ const Index = () => {
       <div className="container mx-auto px-4 py-8">
         <section className="py-12 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium mb-4 text-recipe-text">
-            Your Cooking Journey Starts Here
+            Vinni's Cooking Journey
           </h1>
           <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-            Discover, create, and share your favorite recipes. Keep all your culinary creations organized in one beautiful place.
+            Sharing my culinary skills with you
           </p>
           
           <div className="flex flex-wrap justify-center gap-3">
@@ -34,30 +34,6 @@ const Index = () => {
             >
               <UtensilsCrossed className="mr-2 h-4 w-4" />
               All Recipes
-            </Button>
-            <Button 
-              onClick={() => setFilter('breakfast')} 
-              variant={filter === 'breakfast' ? "default" : "outline"}
-              className={filter === 'breakfast' ? "bg-recipe-primary" : ""}
-            >
-              <Coffee className="mr-2 h-4 w-4" />
-              Breakfast
-            </Button>
-            <Button 
-              onClick={() => setFilter('dessert')} 
-              variant={filter === 'dessert' ? "default" : "outline"}
-              className={filter === 'dessert' ? "bg-recipe-primary" : ""}
-            >
-              <Cookie className="mr-2 h-4 w-4" />
-              Desserts
-            </Button>
-            <Button 
-              onClick={() => setFilter('main')} 
-              variant={filter === 'main' ? "default" : "outline"}
-              className={filter === 'main' ? "bg-recipe-primary" : ""}
-            >
-              <ChefHat className="mr-2 h-4 w-4" />
-              Main Dishes
             </Button>
           </div>
         </section>
