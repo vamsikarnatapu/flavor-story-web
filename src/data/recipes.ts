@@ -1,4 +1,3 @@
-
 import { Recipe } from '@/types/recipe';
 
 export const sampleRecipes: Recipe[] = [
@@ -140,5 +139,209 @@ export const sampleRecipes: Recipe[] = [
     image: 'https://images.unsplash.com/photo-1476124369491-e7addf5db371',
     createdAt: new Date('2023-05-05'),
     updatedAt: new Date('2023-05-05')
+  },
+  {
+    id: '5',
+    title: 'Hyderabadi Chicken Biryani',
+    description: 'Aromatic and spicy layered rice dish with tender chicken, herbs, and authentic Hyderabadi spices.',
+    ingredients: [
+      { name: 'Basmati rice', amount: '500', unit: 'g' },
+      { name: 'Chicken', amount: '750', unit: 'g' },
+      { name: 'Yogurt', amount: '1', unit: 'cup' },
+      { name: 'Onions', amount: '3', unit: 'large' },
+      { name: 'Ginger garlic paste', amount: '2', unit: 'tbsp' },
+      { name: 'Biryani masala', amount: '2', unit: 'tbsp' },
+      { name: 'Green chilies', amount: '4', unit: 'medium' },
+      { name: 'Mint leaves', amount: '1', unit: 'cup' },
+      { name: 'Coriander leaves', amount: '1', unit: 'cup' },
+      { name: 'Saffron', amount: '1', unit: 'pinch' },
+      { name: 'Ghee', amount: '1/2', unit: 'cup' }
+    ],
+    instructions: [
+      { step: 1, description: 'Marinate chicken with yogurt, ginger garlic paste, and spices for 2 hours.' },
+      { step: 2, description: 'Soak basmati rice for 30 minutes, then par-boil with whole spices.' },
+      { step: 3, description: 'Layer marinated chicken and par-boiled rice in a heavy bottom pot.' },
+      { step: 4, description: 'Add fried onions, herbs, and saffron milk between layers.' },
+      { step: 5, description: 'Seal the pot with dough and cook on low heat for 25-30 minutes.' },
+      { step: 6, description: 'Let it rest for 10 minutes before opening.' }
+    ],
+    prepTime: 180,
+    cookTime: 45,
+    servings: 6,
+    difficulty: 'hard',
+    categories: ['main', 'dinner'],
+    image: 'https://images.unsplash.com/photo-1589302168068-964664d93dc0',
+    createdAt: new Date('2024-04-22'),
+    updatedAt: new Date('2024-04-22')
+  },
+  {
+    id: '6',
+    title: 'Chicken 65',
+    description: 'Spicy and crispy deep-fried chicken, a popular South Indian restaurant style appetizer.',
+    ingredients: [
+      { name: 'Chicken boneless', amount: '500', unit: 'g' },
+      { name: 'Red chili powder', amount: '2', unit: 'tsp' },
+      { name: 'Ginger garlic paste', amount: '1', unit: 'tbsp' },
+      { name: 'Corn flour', amount: '2', unit: 'tbsp' },
+      { name: 'Egg', amount: '1', unit: 'large' },
+      { name: 'Curry leaves', amount: '2', unit: 'sprigs' },
+      { name: 'Yogurt', amount: '2', unit: 'tbsp' }
+    ],
+    instructions: [
+      { step: 1, description: 'Marinate chicken with spices, ginger garlic paste, and egg for 2 hours.' },
+      { step: 2, description: 'Mix corn flour into the marinated chicken.' },
+      { step: 3, description: 'Deep fry the chicken pieces until golden and crispy.' },
+      { step: 4, description: 'Prepare the tempering with curry leaves and spices.' },
+      { step: 5, description: 'Toss fried chicken in the tempering.' }
+    ],
+    prepTime: 120,
+    cookTime: 20,
+    servings: 4,
+    difficulty: 'medium',
+    categories: ['appetizer', 'snack'],
+    image: 'https://images.unsplash.com/photo-1610057099443-fde8c4d50f91',
+    createdAt: new Date('2024-04-22'),
+    updatedAt: new Date('2024-04-22')
+  },
+  {
+    id: '7',
+    title: 'Butter Chicken',
+    description: 'Creamy, rich and mildly spiced chicken curry, a North Indian favorite.',
+    ingredients: [
+      { name: 'Chicken', amount: '750', unit: 'g' },
+      { name: 'Butter', amount: '100', unit: 'g' },
+      { name: 'Tomatoes', amount: '6', unit: 'medium' },
+      { name: 'Cream', amount: '200', unit: 'ml' },
+      { name: 'Cashew nuts', amount: '15', unit: 'whole' },
+      { name: 'Ginger garlic paste', amount: '2', unit: 'tbsp' },
+      { name: 'Garam masala', amount: '1', unit: 'tsp' }
+    ],
+    instructions: [
+      { step: 1, description: 'Marinate chicken in yogurt and spices for 4 hours.' },
+      { step: 2, description: 'Grill or tandoor the marinated chicken until cooked.' },
+      { step: 3, description: 'Prepare tomato gravy with cashew paste and spices.' },
+      { step: 4, description: 'Add butter and cream to the gravy.' },
+      { step: 5, description: 'Combine grilled chicken with the creamy gravy.' }
+    ],
+    prepTime: 240,
+    cookTime: 40,
+    servings: 4,
+    difficulty: 'medium',
+    categories: ['main', 'dinner'],
+    image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398',
+    createdAt: new Date('2024-04-22'),
+    updatedAt: new Date('2024-04-22')
+  },
+  {
+    id: '8',
+    title: 'Bhindi Fry (Okra)',
+    description: 'Crispy and spicy okra stir-fry, a popular Indian vegetable dish.',
+    ingredients: [
+      { name: 'Okra (Bhindi)', amount: '500', unit: 'g' },
+      { name: 'Onion', amount: '1', unit: 'medium' },
+      { name: 'Turmeric powder', amount: '1/2', unit: 'tsp' },
+      { name: 'Red chili powder', amount: '1', unit: 'tsp' },
+      { name: 'Amchur powder', amount: '1/2', unit: 'tsp' },
+      { name: 'Oil', amount: '3', unit: 'tbsp' }
+    ],
+    instructions: [
+      { step: 1, description: 'Wash and dry okra thoroughly, then cut into rounds.' },
+      { step: 2, description: 'Heat oil and fry okra until crispy.' },
+      { step: 3, description: 'Add sliced onions and spices.' },
+      { step: 4, description: 'Cook until okra is crispy and well-coated with spices.' }
+    ],
+    prepTime: 15,
+    cookTime: 20,
+    servings: 4,
+    difficulty: 'easy',
+    categories: ['side', 'lunch'],
+    image: 'https://images.unsplash.com/photo-1601576084861-5de423553c0f',
+    createdAt: new Date('2024-04-22'),
+    updatedAt: new Date('2024-04-22')
+  },
+  {
+    id: '9',
+    title: 'Masala Dosa',
+    description: 'Crispy rice and lentil crepe filled with spiced potato filling, served with chutney and sambar.',
+    ingredients: [
+      { name: 'Rice', amount: '3', unit: 'cups' },
+      { name: 'Urad dal', amount: '1', unit: 'cup' },
+      { name: 'Potatoes', amount: '4', unit: 'medium' },
+      { name: 'Onions', amount: '2', unit: 'medium' },
+      { name: 'Mustard seeds', amount: '1', unit: 'tsp' },
+      { name: 'Curry leaves', amount: '2', unit: 'sprigs' }
+    ],
+    instructions: [
+      { step: 1, description: 'Soak rice and dal separately for 6 hours, then grind to a fine batter.' },
+      { step: 2, description: 'Ferment the batter overnight.' },
+      { step: 3, description: 'Prepare potato filling with spices and onions.' },
+      { step: 4, description: 'Spread batter on hot griddle in a circular motion.' },
+      { step: 5, description: 'Add potato filling and fold the dosa.' }
+    ],
+    prepTime: 720,
+    cookTime: 30,
+    servings: 6,
+    difficulty: 'medium',
+    categories: ['breakfast', 'main'],
+    image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc',
+    createdAt: new Date('2024-04-22'),
+    updatedAt: new Date('2024-04-22')
+  },
+  {
+    id: '10',
+    title: 'Rose Falooda',
+    description: 'A refreshing Indian dessert drink made with rose syrup, basil seeds, vermicelli, and milk.',
+    ingredients: [
+      { name: 'Milk', amount: '2', unit: 'cups' },
+      { name: 'Rose syrup', amount: '4', unit: 'tbsp' },
+      { name: 'Basil seeds', amount: '1', unit: 'tbsp' },
+      { name: 'Falooda sev', amount: '1/2', unit: 'cup' },
+      { name: 'Ice cream', amount: '2', unit: 'scoops' },
+      { name: 'Nuts', amount: '2', unit: 'tbsp' }
+    ],
+    instructions: [
+      { step: 1, description: 'Soak basil seeds in water for 30 minutes.' },
+      { step: 2, description: 'Cook falooda sev according to package instructions.' },
+      { step: 3, description: 'Layer glass with rose syrup, soaked basil seeds, and cooked falooda.' },
+      { step: 4, description: 'Add chilled milk and top with ice cream.' },
+      { step: 5, description: 'Garnish with chopped nuts.' }
+    ],
+    prepTime: 30,
+    cookTime: 10,
+    servings: 2,
+    difficulty: 'easy',
+    categories: ['dessert', 'drink'],
+    image: 'https://images.unsplash.com/photo-1633383718081-85a8e051b91c',
+    createdAt: new Date('2024-04-22'),
+    updatedAt: new Date('2024-04-22')
+  },
+  {
+    id: '11',
+    title: 'French Toast',
+    description: 'Classic breakfast dish made with bread slices dipped in egg and milk mixture, then pan-fried until golden.',
+    ingredients: [
+      { name: 'Bread slices', amount: '8', unit: 'slices' },
+      { name: 'Eggs', amount: '4', unit: 'large' },
+      { name: 'Milk', amount: '1', unit: 'cup' },
+      { name: 'Vanilla extract', amount: '1', unit: 'tsp' },
+      { name: 'Cinnamon', amount: '1', unit: 'tsp' },
+      { name: 'Butter', amount: '2', unit: 'tbsp' },
+      { name: 'Maple syrup', amount: '1/4', unit: 'cup' }
+    ],
+    instructions: [
+      { step: 1, description: 'Whisk together eggs, milk, vanilla, and cinnamon.' },
+      { step: 2, description: 'Dip bread slices in the egg mixture.' },
+      { step: 3, description: 'Heat butter in a pan over medium heat.' },
+      { step: 4, description: 'Cook bread until golden brown on both sides.' },
+      { step: 5, description: 'Serve with maple syrup and fresh berries.' }
+    ],
+    prepTime: 10,
+    cookTime: 15,
+    servings: 4,
+    difficulty: 'easy',
+    categories: ['breakfast'],
+    image: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929',
+    createdAt: new Date('2024-04-22'),
+    updatedAt: new Date('2024-04-22')
   }
 ];
