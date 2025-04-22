@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        /* Recipe app custom colors */
+        recipe: {
+          primary: '#7E69AB',
+          secondary: '#D6BCFA',
+          accent: '#FEC6A1',
+          background: '#FFFAF5',
+          card: '#FFFFFF',
+          text: '#333333',
+          muted: '#8E9196',
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +95,40 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        /* Recipe app custom animations */
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        },
+        'scale-in': {
+          '0%': {
+            transform: 'scale(0.95)',
+            opacity: '0'
+          },
+          '100%': {
+            transform: 'scale(1)',
+            opacity: '1'
+          }
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        /* Recipe app custom animations */
+        'fade-in': 'fade-in 0.5s ease-out',
+        'scale-in': 'scale-in 0.3s ease-out'
+			},
+      fontFamily: {
+        'serif': ['Playfair Display', 'serif'],
+        'sans': ['Inter', 'sans-serif']
+      }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
